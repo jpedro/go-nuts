@@ -15,7 +15,7 @@ import (
 func main() {
 	fmt.Println("hi")
 	log.Default().Println("log")
-	assets, _ := templates.Assets()
+	assets, _ := templates.Assets
 	fmt.Println("assets:", assets)
 }
 
