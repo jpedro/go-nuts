@@ -8,14 +8,14 @@ import (
 	// "strings"
 	// "text/template"
 
-	"github.com/jpedro/go-nuts/files"
+	"github.com/jpedro/go-nuts/files/templates"
 )
 
 
 func main() {
 	fmt.Println("hi")
 	log.Default().Println("log")
-	assets, _ := files.Assets()
+	assets, _ := templates.Assets()
 	fmt.Println("assets:", assets)
 }
 

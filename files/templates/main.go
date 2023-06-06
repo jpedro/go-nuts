@@ -5,9 +5,9 @@ import (
 	"io/fs"
 )
 
-//go:embed all:templates
+//go:embed all:nested
 var assets embed.FS
 
 func Assets() (fs.FS, error) {
-	return fs.Sub(assets, "templates")
+	return fs.Sub(assets, "nested")
 }
