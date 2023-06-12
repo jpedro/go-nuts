@@ -3,16 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	// "os"
 
-	// "path/filepath"
-	// "bytes"
-	// "strings"
-	// "text/template"
-
-	"github.com/jpedro/go-nuts/files/assets"
+	assets "github.com/jpedro/go-nuts/files/assets"
 )
-
 
 func main() {
 	fmt.Println("hi")
