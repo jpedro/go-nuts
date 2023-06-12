@@ -3,20 +3,28 @@ package main
 import (
 	"fmt"
 	"log"
+	// "os"
+
 	// "path/filepath"
 	// "bytes"
 	// "strings"
 	// "text/template"
 
-	"github.com/jpedro/go-nuts/files/templates"
+	"github.com/jpedro/go-nuts/files/assets"
 )
 
 
 func main() {
 	fmt.Println("hi")
 	log.Default().Println("log")
-	assets, _ := templates.Assets
-	fmt.Println("assets:", assets)
+	// assets, _ := templates.Assets()
+	bytes, err := assets.Assets.ReadFile("nested/directory/some.file")
+	if err != nil {
+		log.Fatalln("Error:", err)
+	}
+	// text := os.ReadFile()
+	fmt.Println("bytes:", string(bytes))
+	// fmt.Printf("file: %T\n", file)
 }
 
 // func TemplateUpper(text string) string {
