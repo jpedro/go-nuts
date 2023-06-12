@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/jpedro/go-nuts/files/assets"
+	assets "github.com/jpedro/go-nuts/files/assets"
 )
 
 func main() {
